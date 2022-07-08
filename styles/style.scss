@@ -88,6 +88,8 @@ body {
         font-weight: 600;
         line-height: 120%;
         margin-bottom: 1rem;
+        max-width: 300px;
+        overflow-wrap: break-word;
     }
     &__descr{
         font-size: 16px;
