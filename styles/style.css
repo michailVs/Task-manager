@@ -92,7 +92,7 @@ body {
   align-items: center;
 }
 .header .input {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,39 +146,47 @@ body {
   color: #000;
 }
 
+.task {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .task__cont {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 8fr);
   grid-auto-rows: auto;
-  grid-gap: 40px;
+  grid-gap: 25px;
 }
 
 .active {
-  padding: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 10px 20px;
   background-color: rgb(84, 207, 115);
   border-radius: 20px;
+  transition: opacity 0.5s, background-color 0.3s;
 }
 .active__title {
   font-size: 18px;
   font-weight: 600;
   line-height: 120%;
-  margin-bottom: 1rem;
   max-width: 300px;
   overflow-wrap: break-word;
 }
-.active__descr {
-  font-size: 16px;
-  line-height: 120%;
-  margin-bottom: 1rem;
+.active__complete {
+  margin-left: 0 auto;
 }
-.active__completed {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5px;
+.active__remove {
+  padding: 5px;
+  background-color: rgb(190, 71, 71);
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
 }
-.active__completed-text {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.active__remove:hover {
+  background-color: rgba(209, 26, 26, 0.644);
+  color: #000;
+}
+.active.checked {
+  background-color: rgb(59, 146, 81);
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */
